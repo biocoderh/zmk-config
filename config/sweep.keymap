@@ -15,15 +15,15 @@
 
 #define KM_SEL(n) &bt BT_SEL n
 
-#define MM_LEFT &mmv MOVE_LEFT
-#define MM_DOWN &mmv MOVE_DOWN
-#define MM_UP &mmv MOVE_UP
-#define MM_RIGHT &mmv MOVE_RIGHT
+#define MMV_LEFT &mmv MOVE_LEFT
+#define MMV_DOWN &mmv MOVE_DOWN
+#define MMV_UP &mmv MOVE_UP
+#define MMV_RIGHT &mmv MOVE_RIGHT
 
-#define MS_LEFT &mwh SCRL_LEFT
-#define MS_DOWN &mwh SCRL_DOWN
-#define MS_UP &mwh SCRL_UP
-#define MS_RIGHT &mwh SCRL_RIGHT
+#define MSC_LEFT &msc SCRL_LEFT
+#define MSC_DOWN &msc SCRL_DOWN
+#define MSC_UP &msc SCRL_UP
+#define MSC_RIGHT &msc SCRL_RIGHT
 
 #define KM_VOLDN &kp C_VOL_DN
 #define KM_VOLUP &kp C_VOL_UP
@@ -121,10 +121,10 @@
             KM_SEL(0)  KM_SEL(1)  KM_SEL(2)  KM_SEL(3) &bt BT_CLR      &none      &mkp MB4   &none      &none      &mkp MB5
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Undo    │  Redo    │  Copy    │  Paste   │  Cut     │   │ MidClick │  MvLeft  │  MvDown  │  MvUp    │  MvRight │
-            &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)  &kp LC(X)      &mkp MCLK  MM_LEFT    MM_DOWN    MM_UP      MM_RIGHT
+            &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)  &kp LC(X)      &mkp MCLK  MMV_LEFT   MMV_DOWN   MMV_UP     MMV_RIGHT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  MsLeft  │  MsDown  │  MsUp    │  MsRight │
-            &none      &none      &none      &none      &none          &none      MS_LEFT    MS_DOWN    MS_UP      MS_RIGHT
+            &none      &none      &none      &none      &none          &none      MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &mkp LCLK  &mkp RCLK
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
