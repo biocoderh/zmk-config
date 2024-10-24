@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include <behaviors/mouse_keys.dtsi>
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
 #include <dt-bindings/zmk/mouse.h>
 
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
