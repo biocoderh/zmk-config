@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include <behaviors/mouse_keys.dtsi>
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1000
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
 #include <dt-bindings/zmk/mouse.h>
 
@@ -39,8 +40,7 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <1000>;
 };
 
 / {
@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sys_reset>, <&bootloader>;
+            bindings = <&sys_reset>, <&bootloader>, <&studio_unlock>;
         };
     };
 
@@ -69,8 +69,8 @@
             display-name = "Base";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  J       │  F       │  D       │  K       │  Tab     │   │  Ins     │  Q       │  L       │  H       │  Z       │
-            &kp J      &kp F      &kp W      &kp K      &kp TAB        &kp INS    &kp Q      &kp L      &kp H      &kp Z
+        //│  J       │  F       │  D       │  K       │  Tab     │   │  Mouse   │  Q       │  L       │  H       │  Z       │
+            &kp J      &kp F      &kp W      &kp K      &kp TAB        &tog 3     &kp Q      &kp L      &kp H      &kp Z
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  O       │  A       │  I       │  E       │  W       │   │  V       │  T       │  N       │  R       │  S       │
             HRML(O,        A,         I,         E)     &kp W          &kp V      HRMR(T,        N,         R,         S)
@@ -90,8 +90,8 @@
         //│  6       │  2       │  0       │  4       │  8       │   │  9       │  5       │  1       │  3       │  7       │
             &kp N6     &kp N2     &kp N0     &kp N4     &kp N8         &kp N9     &kp N5     &kp N1     &kp N3     &kp N7
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  .       │  ,       │  (       │  )       │  =       │   │  App     │  Left    │  Down    │  Up      │  Right   │
-            &kp DOT    &kp COMMA  &kp LPAR   &kp RPAR   &kp EQUAL      &kp K_APP  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+        //│  .       │  ,       │  (       │  )       │  =       │   │  Ins     │  Left    │  Down    │  Up      │  Right   │
+            HRML(DOT,     COMMA,     LPAR,      RPAR)   &kp EQUAL      &kp INS    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  /       │  *       │  +       │  -       │  %       │   │  Del     │  Home    │  PgDn    │  PgUp    │  End     │
             KM_SLASH   KM_ASTRK   KM_PLUS    KM_MINUS   &kp PRCNT      &kp DEL    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
@@ -124,7 +124,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ Device 0 │ Device 1 │ Device 2 │ Device 3 │ CLEAR BT │   │          │  Back    │          │          │  Forward │
-            KM_SEL(0)  KM_SEL(1)  KM_SEL(2)  KM_SEL(3) &bt BT_CLR      &none      &mkp MB4   &none      &none      &mkp MB5
+            KM_SEL(0)  KM_SEL(1)  KM_SEL(2)  KM_SEL(3) &bt BT_CLR      &trans     &mkp MB4   &none      &none      &mkp MB5
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Undo    │  Redo    │  Copy    │  Paste   │  Cut     │   │ MidClick │  MvLeft  │  MvDown  │  MvUp    │  MvRight │
             &kp LC(Z)  &kp LC(Y)  &kp LC(C)  &kp LC(V)  &kp LC(X)      &mkp MCLK  MMV_LEFT   MMV_DOWN   MMV_UP     MMV_RIGHT
