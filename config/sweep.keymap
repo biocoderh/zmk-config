@@ -37,6 +37,11 @@
     require-prior-idle-ms = <100>;
 };
 
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <2>;
+};
+
 / {
     behaviors {
         ht: hold_tap {
