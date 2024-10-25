@@ -1,4 +1,4 @@
-if SHIELD_SWEEP_LEFT
+if SHIELD_SWEEP_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Sweep"
