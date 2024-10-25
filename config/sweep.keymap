@@ -44,7 +44,7 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <1000>;
+    time-to-max-speed-ms = <500>;
 };
 
 / {
