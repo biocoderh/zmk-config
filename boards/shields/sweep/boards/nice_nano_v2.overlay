@@ -1,3 +1,4 @@
+/*
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
@@ -21,3 +22,4 @@
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
 };
+*/
