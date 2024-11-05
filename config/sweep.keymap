@@ -73,8 +73,8 @@
             display-name = "Base";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  J       │  F       │  D       │  K       │  Tab     │   │  Mouse   │  Q       │  L       │  H       │  Z       │
-            &kp J      &kp F      &kp D      &kp K      &kp TAB        &tog 3     &kp Q      &kp L      &kp H      &kp Z
+        //│  J       │  H       │  D       │  Q       │  Tab     │   │  Mouse   │  K       │  L       │  F       │  Z       │
+            &kp J      &kp H      &kp D      &kp Q      &kp TAB        &tog 3     &kp K      &kp L      &kp F      &kp Z
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  O       │  A       │  I       │  E       │  W       │   │  V       │  T       │  N       │  R       │  S       │
             HRML(O,        A,         I,         E)     &kp W          &kp V      HRMR(T,        N,         R,         S)
