@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 3200
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 60
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -35,11 +35,11 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <600>;
 };
 
 &msc {
-    time-to-max-speed-ms = <50>;
+    time-to-max-speed-ms = <60>;
 };
 
 / {
