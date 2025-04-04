@@ -2,15 +2,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
 
 #include <dt-bindings/zmk/pointing.h>
-
-#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
-#define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
-
-#define KM_SEL(n) &bt BT_SEL n
 
 #define MMV_LEFT &mmv MOVE_LEFT
 #define MMV_DOWN &mmv MOVE_DOWN
@@ -22,10 +18,14 @@
 #define MSC_UP &msc SCRL_UP
 #define MSC_RIGHT &msc SCRL_RIGHT
 
-#define KM_VOLDN &kp C_VOL_DN
-#define KM_VOLUP &kp C_VOL_UP
+
+#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
+#define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
+
+#define KM_SEL(n) &bt BT_SEL n
 #define KM_BRIDN &kp C_BRI_DN
 #define KM_BRIUP &kp C_BRI_UP
+
 
 &lt {
     flavor = "tap-preferred";
@@ -137,7 +137,7 @@
             &kp F6     &kp F2     &kp F10    &kp F4     &trans         &trans     &kp F5     &kp F1     &kp F3     &kp F7
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Break   │  F12     │  F11     │  PrScr   │  F8      │   │  F9      │  Prev    │  Vol -   │  Vol +   │  Next    │
-    HRML(PAUSE_BREAK,      F12,       F11,      PSCRN)  &kp F8         &kp F9   HRMR(C_PREV, KM_VOLDN,  KM_VOLUP,  C_NEXT)
+    HRML(PAUSE_BREAK,      F12,       F11,      PSCRN)  &kp F8         &kp F9   HRMR(C_PREV, C_VOL_DN,  C_VOL_UP,  C_NEXT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  Rewind  │  Bri -   │  Bri +   │  Forward │
             &none      &none      &none      &none      &trans         &trans     &kp C_RW   KM_BRIDN   KM_BRIUP   &kp C_FF
