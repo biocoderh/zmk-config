@@ -1,0 +1,294 @@
+[
+  {
+    "backcolor": "#0d1117",
+    "pcb": false
+  },
+  [
+    {
+      "x": 2,
+      "c": "#21262d",
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72",
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "0\nBT0\n\nF10\n\n\n\n\n\nH",
+    {
+      "x": 6
+    },
+    "1\nBT1\n!\nF1\n\n\n\n\n\nO"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 1
+    },
+    "2\nBT2\n@\nF2\n\n\n\n\n\nL",
+    {
+      "x": 1
+    },
+    "4\nBT4\n$\nF4\n\n\n\n\n\nG",
+    {
+      "x": 4
+    },
+    "5\nBack\n%\nF5\n\n\n\n\n\nF",
+    {
+      "x": 1
+    },
+    "3\nBT3\n#\nF3\n\n\n\n\n\nU"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 4,
+      "t": "#ff7b72",
+      "a": 7
+    },
+    "Fn",
+    {
+      "x": 2,
+      "t": "#7ee787"
+    },
+    "Mouse"
+  ],
+  [
+    {
+      "y": -0.5,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72",
+      "a": 4
+    },
+    "6\nBT<br>CLR\n^\nF6\n\n\n\n\n\nV",
+    {
+      "x": 1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590"
+    },
+    "=\nCopy\n'\nF11\nCtrl\n\n\n\n\nN",
+    {
+      "x": 6,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "▼\n⬇\n\"\n<i class='kb kb-Multimedia-Volume-Down-1'></i>\nCtrl\n\n\n\n\nA",
+    {
+      "x": 1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72",
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "7\nFwd\n&\nF7\n\n\n\n\n\nJ"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590"
+    },
+    ".\nCut\n:\nF12\nAlt\n\n\n\n\nR",
+    {
+      "x": 1,
+      "fa": [
+        0,
+        1,
+        0
+      ]
+    },
+    ",\nPaste\n(\n⎙\nShift\n\n\n\n\nT",
+    {
+      "x": 4,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "◀\n⬅\n)\n⏮\nShift\n\n\n\n\nC",
+    {
+      "x": 1
+    },
+    "▲\n⬆\n;\n<i class='kb kb-Multimedia-Volume-Up-1'></i>\nAlt\n\n\n\n\nE"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 4,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72",
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "8\nRedo\n`\nF8\n\n\n\n\n\nB",
+    {
+      "x": 2,
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "9\nM\n~\nF9\n\n\n\n\n\nY"
+  ],
+  [
+    {
+      "y": -0.5,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590",
+      "f2": 1
+    },
+    "-\nUndo\n_\n⎉\nSuper\n\n\n\n\nS",
+    {
+      "x": 1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72",
+      "f": 3
+    },
+    "+\n\n{\n\n\n\n\n\n\nM",
+    {
+      "x": 6,
+      "fa": [
+        1,
+        0,
+        0
+      ]
+    },
+    "PgDn\n↧\n}\n🔅\n\n\n\n\n\nP",
+    {
+      "x": 1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#7d8590",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "▶\n⮕\n|\n⏭\nSuper\n\n\n\n\nI"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72"
+    },
+    "*\n\n<\n\n\n\n\n\n\nX",
+    {
+      "x": 1
+    },
+    "%\n\n[\n\n\n\n\n\n\nD",
+    {
+      "x": 4,
+      "fa": [
+        1,
+        0
+      ]
+    },
+    "Home\n↤\n]\n⏪︎\n\n\n\n\n\nW",
+    {
+      "x": 1
+    },
+    "PgUp\n↥\n>\n🔆\n\n\n\n\n\nK"
+  ],
+  [
+    {
+      "y": -0.75,
+      "x": 4,
+      "t": "#d2a8ff",
+      "a": 7,
+      "f": 3
+    },
+    "Sym",
+    {
+      "x": 2,
+      "t": "#79c0ff",
+      "f": 3
+    },
+    "Num<br>Nav"
+  ],
+  [
+    {
+      "y": -0.5,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72",
+      "a": 4,
+      "f2": 0
+    },
+    "/\n\n?\n\n\n\n\n\n\nZ",
+    {
+      "x": 10,
+      "fa": [
+        1,
+        0,
+        0
+      ]
+    },
+    "End\n↦\n\\\n⏩︎\n\n\n\n\n\nQ"
+  ],
+  [
+    {
+      "r": 15,
+      "rx": 4.5,
+      "ry": 3.75,
+      "x": -1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#7ee787",
+      "fa": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "\n\nCaps\n<i class='kb kb-Multimedia-Mute-1'></i>\nMouse\n\n\n\n\n⎋"
+  ],
+  [
+    {
+      "r": 30,
+      "rx": 5.75,
+      "ry": 4.25,
+      "x": -1,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#79c0ff"
+    },
+    "\n\nTab\n⏯\nNum\n\n\n\n\n⎵"
+  ],
+  [
+    {
+      "r": -30,
+      "rx": 6.25,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#d2a8ff",
+      "fa": [
+        2,
+        0
+      ]
+    },
+    "Del\nL\n\n\nSym\n\n\n\n\n⌫"
+  ],
+  [
+    {
+      "r": -15,
+      "rx": 7.5,
+      "ry": 3.75,
+      "t": "#79c0ff\n#7ee787\n#d2a8ff\n#ff7b72\n#ff7b72"
+    },
+    "Ins\nR\n\n\nFn\n\n\n\n\n↵"
+  ]
+]
