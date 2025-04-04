@@ -137,7 +137,7 @@
             &kp F6     &kp F2     &kp F10    &kp F4     &trans         &trans     &kp F5     &kp F1     &kp F3     &kp F7
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Break   │  F12     │  F11     │  PrScr   │  F8      │   │  F9      │  Prev    │  Vol -   │  Vol +   │  Next    │
-    HRML(PAUSE_BREAK,      F12,       F11,      PSCRN)     F8,         &kp F9   HRMR(C_PREV, KM_VOLDN,  KM_VOLUP,  C_NEXT)
+    HRML(PAUSE_BREAK,      F12,       F11,      PSCRN)  &kp F8         &kp F9   HRMR(C_PREV, KM_VOLDN,  KM_VOLUP,  C_NEXT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  Rewind  │  Bri -   │  Bri +   │  Forward │
             &none      &none      &none      &none      &trans         &trans     &kp C_RW   KM_BRIDN   KM_BRIUP   &kp C_FF
