@@ -93,7 +93,7 @@
             &kp CARET  &kp AT     &none      &kp DLLR   &trans         &trans     &kp PRCNT  &kp EXCL   &kp HASH   &kp AMPS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  _       │  :       │  '       │  (       │  `       │   │  ~       │  )       │  ;       │  ;       │  |       │
-            &kp UNDER  &kp COLON  &kp APOS   &kp LPAR   &kp GRAVE      &kp TILDE  &kp RPAR   &kp DQT    &kp SEMI   &kp PIPE
+           HRML(UNDER,    COLON,      APOS,      LPAR)  &kp GRAVE      &kp TILDE  HRMR(RPAR,     DQT,       SEMI,      PIPE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ?       │  <       │  {       │  [       │          │   │          │  ]       │  }       │  >       │  \       │
             &kp QMARK  &kp LT     &kp LBRC   &kp LBKT   &trans         &trans     &kp RBKT   &kp RBRC   &kp GT     &kp BSLH
