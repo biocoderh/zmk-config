@@ -3,14 +3,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 #include <dt-bindings/zmk/pointing.h>
 
 &mmv {
-    delay-ms = <0>;
-    time-to-max-speed-ms = <600>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
 };
 
@@ -20,8 +19,7 @@
 #define MMV_RIGHT &mmv MOVE_RIGHT
 
 &msc {
-    delay-ms = <0>;
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <50>;
     acceleration-exponent = <1>;
 };
 
