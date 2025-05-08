@@ -8,10 +8,20 @@
 
 #include <dt-bindings/zmk/pointing.h>
 
+&mmv {
+    time-to-max-speed-ms = <600>;
+    acceleration-exponent = <1>;
+};
+
 #define MMV_LEFT &mmv MOVE_LEFT
 #define MMV_DOWN &mmv MOVE_DOWN
 #define MMV_UP &mmv MOVE_UP
 #define MMV_RIGHT &mmv MOVE_RIGHT
+
+&msc {
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
 
 #define MSC_LEFT &msc SCRL_LEFT
 #define MSC_DOWN &msc SCRL_DOWN
@@ -32,20 +42,6 @@
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
     require-prior-idle-ms = <100>;
-};
-
-&mmv {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <600>;
-    acceleration-exponent = <1>;
-};
-
-&msc {
-    x-input-code = <INPUT_REL_HWHEEL>;
-    y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <300>;
-    acceleration-exponent = <1>;
 };
 
 / {
